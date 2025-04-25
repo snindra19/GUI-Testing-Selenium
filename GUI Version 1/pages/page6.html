@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Country Capitals Quiz - Feedback</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <div id="page6" class="page active">
+    <h2 id="thankText">Thank you!</h2>
+    <img src="../images/thanks.png" alt="Thanks Image" />
+    <p>Your Score: <span id="scoreDisplay"></span>/5</p>
+
+    <p>Rate your experience:</p>
+    <label><input type="radio" name="rating" value="Satisfied" onchange="saveRadioAnswer('rating')" /> Satisfied</label><br />
+    <label><input type="radio" name="rating" value="Satisfactory" onchange="saveRadioAnswer('rating')" /> Satisfactory</label><br />
+    <label><input type="radio" name="rating" value="Horrible" onchange="saveRadioAnswer('rating')" /> Horrible</label><br /><br />
+
+    <textarea id="feedback" placeholder="Your comments..." onblur="saveAnswer('feedback', this.value)"></textarea><br>
+    <label><input type="checkbox" id="subscribe" onchange="saveCheckbox('subscribe')" /> Subscribe to updates</label>
+    <br><br>
+    <button id = "finish" onclick="submitFeedback()">Finish</button>
+    <button id = "restart" onclick="goBack('page1')">Try Again</button>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

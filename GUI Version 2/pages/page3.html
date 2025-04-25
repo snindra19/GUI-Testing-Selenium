@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Country Capitals Quiz - Medium Questions</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- Page 3 -->
+  <div id="page3" class="page active">
+    <h2>Medium Questions</h2>
+    <div class="row">
+      <div style="flex: 1;">
+        <p>3. What is the capital of Canada?</p>
+        <div class="horizontal-options">
+          <label><input type="radio" name="q3" value="Ottawa" onchange="saveRadioAnswer('q3')" /> Ottawa</label>
+          <label><input type="radio" name="q3" value="Toronto" onchange="saveRadioAnswer('q3')" /> Toronto</label>
+          <label><input type="radio" name="q3" value="Vancouver" onchange="saveRadioAnswer('q3')" /> Vancouver</label>
+        </div>
+
+        <p>4. What is the capital of Australia?</p>
+        <div class="horizontal-options">
+          <label><input type="radio" name="q4" value="Canberra" onchange="saveRadioAnswer('q4')" /> Canberra</label>
+          <label><input type="radio" name="q4" value="Sydney" onchange="saveRadioAnswer('q4')" /> Sydney</label>
+          <label><input type="radio" name="q4" value="Melbourne" onchange="saveRadioAnswer('q4')" /> Melbourne</label>
+        </div>
+
+        <p><strong>Bonus:</strong> What symbol appears on the Canadian flag?</p>
+        <input type="text" id="bonus3" class="input-large" placeholder="Your answer here" onblur="saveBonusAnswer('bonus3')" />
+
+        <div class="left-align">
+          <label><input type="checkbox" id="confirm3" /> Confirm</label>
+          <button id="next4" onclick="confirmAndNext('confirm3', 'page2')" class="large-button">Next</button>
+        </div>
+      </div>
+      <div style="flex: 1;"><img src="../images/auscan.jpg" alt="Medium Questions Image" /></div>
+    </div>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

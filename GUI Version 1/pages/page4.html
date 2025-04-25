@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Country Capitals Quiz - Hard Questions</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <div id="page4" class="page active">
+    <h2>Hard Questions</h2>
+    <img src="../images/nigeria.png" alt="Hard Questions Image" />
+
+    <div>
+      <p>5. What is the capital of Nigeria?</p>
+      <label><input type="radio" name="q5" value="Abuja" onchange="saveRadioAnswer('q5')" /> Abuja</label><br />
+      <label><input type="radio" name="q5" value="Lagos" onchange="saveRadioAnswer('q5')" /> Lagos</label><br />
+      <label><input type="radio" name="q5" value="Kano" onchange="saveRadioAnswer('q5')" /> Kano</label><br />
+      <label>Difficulty:
+        <input type="range" min="1" max="3" class="slider" id="slider5" list="levels5" onchange="saveSliderValue('slider5')" />
+      </label>
+      <datalist id="levels5">
+        <option value="1" label="Easy">
+        <option value="2" label="Medium">
+        <option value="3" label="Hard">
+      </datalist>
+    </div>
+
+    <br>
+    <p><strong>Bonus:</strong> What is the name of Nigeria's film industry?</p>
+    <input type="text" id="bonus4" placeholder="Your answer here" onblur="saveBonusAnswer('bonus4')" /><br><br>
+
+    <label><input type="checkbox" id="confirm4" onchange="saveCheckbox('confirm4')" /> Confirm</label>
+    <div class="navigation">
+      <button id = "next6" onclick="confirmAndNext('confirm4', 'page6')">Submit</button>
+    </div>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

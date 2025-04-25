@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Country Capitals Quiz - Easy Questions</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- Page 2 -->
+  <div id="page2" class="page active">
+    <h2>Easy Questions</h2>
+    <img src="../images/fraita.jpg" alt="Easy Questions Image" style="max-width: 400px;" />
+
+    <div>
+      <p>1. What is the capital of France?</p>
+      <div class="horizontal-options">
+        <label><input type="radio" name="q1" value="Paris" onchange="saveRadioAnswer('q1')" /> Paris</label>
+        <label><input type="radio" name="q1" value="London" onchange="saveRadioAnswer('q1')" /> London</label>
+        <label><input type="radio" name="q1" value="Berlin" onchange="saveRadioAnswer('q1')" /> Berlin</label>
+      </div>
+    </div>
+
+    <div>
+      <p>2. What is the capital of Italy?</p>
+      <div class="horizontal-options">
+        <label><input type="radio" name="q2" value="Rome" onchange="saveRadioAnswer('q2')" /> Rome</label>
+        <label><input type="radio" name="q2" value="Milan" onchange="saveRadioAnswer('q2')" /> Milan</label>
+        <label><input type="radio" name="q2" value="Naples" onchange="saveRadioAnswer('q2')" /> Naples</label>
+      </div>
+    </div>
+
+    <p><strong>Bonus:</strong> What famous monument is in Paris?</p>
+    <input type="text" id="bonus2" class="input-large" placeholder="Your answer here" onblur="saveBonusAnswer('bonus2')" />
+
+    <br><label><input type="checkbox" id="confirm2" /> Confirm</label>
+    <div class="navigation">
+      <button id = "next3" onclick="confirmAndNext('confirm2', 'page4')" class="large-button">Next</button>
+    </div>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

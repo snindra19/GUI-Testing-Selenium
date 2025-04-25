@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Country Capitals Quiz</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- Page 1 -->
+  <div id="page1" class="page active">
+    <h1>Welcome to the Country Capitals Quiz!</h1>
+    <img src="../images/world-map.gif" alt="Quiz Banner" class="banner" />
+
+    <p>Enter your name to begin:</p>
+    <input type="text" id="username" class="input-large" placeholder="Your name" />
+
+    <p>Experience Level:</p>
+    <div class="horizontal-options">
+      <label><input type="radio" name="experience" value="Beginner" /> Beginner</label>
+      <label><input type="radio" name="experience" value="Intermediate" /> Intermediate</label>
+      <label><input type="radio" name="experience" value="Expert" /> Expert</label>
+    </div>
+
+    <br>
+    <label>
+      <input type="checkbox" id="honorCheckbox" />
+      This quiz is being taken only by me, with no external help.
+    </label>
+
+    <br><br>
+    <button id= "startButton" onclick="nextPage('page3')" class="large-button">Start Quiz</button>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

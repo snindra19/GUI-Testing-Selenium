@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Country Capitals Quiz - Easy Questions</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <div id="page2" class="page active">
+    <h2>Easy Questions</h2>
+    <img src="../images/fraita.jpg" alt="Easy Questions Image" />
+
+    <div>
+      <p>1. What is the capital of France?</p>
+      <label><input type="radio" name="q1" value="Paris" onchange="saveRadioAnswer('q1')" /> Paris</label><br />
+      <label><input type="radio" name="q1" value="London" onchange="saveRadioAnswer('q1')" /> London</label><br />
+      <label><input type="radio" name="q1" value="Berlin" onchange="saveRadioAnswer('q1')" /> Berlin</label><br />
+      <label>Difficulty:
+        <input type="range" min="1" max="3" class="slider" id="slider1" list="levels1" onchange="saveSliderValue('slider1')" />
+      </label>
+      <datalist id="levels1">
+        <option value="1" label="Easy">
+        <option value="2" label="Medium">
+        <option value="3" label="Hard">
+      </datalist>
+    </div>
+
+    <div>
+      <p>2. What is the capital of Italy?</p>
+      <label><input type="radio" name="q2" value="Rome" onchange="saveRadioAnswer('q2')" /> Rome</label><br />
+      <label><input type="radio" name="q2" value="Milan" onchange="saveRadioAnswer('q2')" /> Milan</label><br />
+      <label><input type="radio" name="q2" value="Naples" onchange="saveRadioAnswer('q2')" /> Naples</label><br />
+      <label>Difficulty:
+        <input type="range" min="1" max="3" class="slider" id="slider2" list="levels2" onchange="saveSliderValue('slider2')" />
+      </label>
+      <datalist id="levels2">
+        <option value="1" label="Easy">
+        <option value="2" label="Medium">
+        <option value="3" label="Hard">
+      </datalist>
+    </div>
+
+    <br>
+    <p><strong>Bonus:</strong> What famous monument is in Paris?</p>
+    <input type="text" id="bonus2" placeholder="Your answer here" onblur="saveBonusAnswer('bonus2')" /><br><br>
+
+    <label><input type="checkbox" id="confirm2" onchange="saveCheckbox('confirm2')" /> Confirm</label>
+    <div class="navigation">
+      <button id="next3" onclick="confirmAndNext('confirm2', 'page3')">Next</button>
+    </div>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

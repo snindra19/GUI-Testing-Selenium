@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.example.selenium.GuiTestCasesV1Test
+-------------------------------------------------------------------------------
+Tests run: 95, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.777 s - in com.example.selenium.GuiTestCasesV1Test
